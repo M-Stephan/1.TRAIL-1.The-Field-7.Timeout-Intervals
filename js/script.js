@@ -1,5 +1,6 @@
 /** @description -- Importe le module function.js */
-import { setText, setTime } from "./modules/function.js";
+import { setText, setTime,  } from "./modules/function.js";
+import { start } from "./modules/wam.js";
 
 /** @const {HTMLElement} header -- Cible le <header> */
 const header = document.getElementById("header");
@@ -8,6 +9,7 @@ const header = document.getElementById("header");
 const h1 = document.createElement("h1");
 /** @const {HTMLElement} h3 -- Crée un <h3> */
 const h3 = document.createElement("h3");
+h3.id = "time"
 
 /** @description -- Ajoute le <h1> dans le <header> */
 header.appendChild(h1);
@@ -22,9 +24,14 @@ const interval = setInterval(() => {
     setText(word, h1, interval);
 }, 1000);
 
-
-/* --------------------------------------------------------------- */
-
 setInterval(function() {
     setTime(h3)
 }, 1000)
+
+const startGame = document.getElementById("start");
+
+startGame.addEventListener("click", function() {
+    start();
+});
+
+

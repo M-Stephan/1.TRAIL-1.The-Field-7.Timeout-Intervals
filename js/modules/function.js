@@ -34,7 +34,6 @@ export function setTime(time) {
         sec = 1;
         min++;
     }
-    console.log(sec)
     if (min > 0) {
         time.innerText = `${min} minute has passed`;
     } else {
