@@ -28,10 +28,10 @@ let min = 0;
  * 
  */
 export function setTime(time) {
-    if (sec < 59) {
+    if (sec < 60) {
         sec++;
     } else {
-        sec = 0;
+        sec = 1;
         min++;
     }
     console.log(sec)
