@@ -33,7 +33,6 @@ export function spawnTaupe(time) {
     taupe.style.backgroundPosition = "center";
     taupe.style.backgroundRepeat = "no-repeat";
 
-    
     timeoutID = setTimeout(() => {
         if (taupe) {
             taupe.style.backgroundImage = `url("https://ndc-studio.github.io/Timeout-Whack-A-Mole/assets/buis-one.png")`;
