@@ -19,7 +19,7 @@ let gameRunning = true; // Variable pour arrêter le jeu
 
 export function spawnTaupe(time) {
     if (taupe) {
-        taupe.style.backgroundImage = "url('../assets/buis-one.png')";
+        taupe.style.backgroundImage = `url("../assets/buis-one.png")`;
         taupe.style.backgroundSize = "contain";
         taupe.style.backgroundPosition = "center";
         taupe.style.backgroundRepeat = "no-repeat";
@@ -46,7 +46,7 @@ trous.forEach((trou) => {
     trou.addEventListener("click", () => {
         if (trou === taupe) {
             clearTimeout(timeoutID);
-            taupe.style.backgroundImage = "url('../assets/buis-one.png')";
+            taupe.style.backgroundImage = `url("../assets/buis-one.png")`;
             taupe.style.backgroundSize = "contain";
             taupe.style.backgroundPosition = "center";
             taupe.style.backgroundRepeat = "no-repeat";
@@ -55,7 +55,7 @@ trous.forEach((trou) => {
     });
 });
 
-export function start(t1, t2) {
+export function start(ti1, ti2) {
     // Afficher le décompte avant de commencer le jeu
     let countdown = 3;
     h2.textContent = countdown;  // Affiche "3" dans le h2
@@ -73,7 +73,7 @@ export function start(t1, t2) {
         // Lorsque le décompte atteint 0, on commence le jeu
         if (countdown <= 0) {
             clearInterval(countdownInterval); // Arrête le décompte
-            startGame(t1, t2); // Démarre le jeu
+            startGame(ti1, ti2); // Démarre le jeu
         }
     }, 1000); // Chaque seconde, on réduit le décompte de 1
      
