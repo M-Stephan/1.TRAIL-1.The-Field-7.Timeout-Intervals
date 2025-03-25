@@ -30,8 +30,26 @@ setInterval(function() {
 
 const startGame = document.getElementById("start");
 
+let time1 = 1825;
+let time2 = 1250;
+
+const select = document.getElementById("select");
+const selectedOption = select.options[select.selectedIndex];
+select.addEventListener("change", function() {
+    if (selectedOption.id === "easy") {
+        time1 = 1500;
+        time2 = 1000;
+    } else if (selectedOption.id === "medium") {
+        time1 = 1225;
+        time2 = 750;
+    } else if (selectedOption.id === "hard") {
+        time1 = 1050;
+        time2 = 500;
+    }
+})
+
 startGame.addEventListener("click", function() {
-    start();
+    start(time1, time2);
 });
 
 

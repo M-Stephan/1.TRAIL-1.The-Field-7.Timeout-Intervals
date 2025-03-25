@@ -17,28 +17,12 @@ let score = 0;
 let timeLeft = 60; // Temps de jeu en secondes
 let gameRunning = true; // Variable pour arrêter le jeu
 
-
-let time1 = 1500;
-let time2 = 1000;
-
-const select = document.getElementById("select");
-const selectedOption = select.options[select.selectedIndex];
-select.addEventListener("change", function() {
-    if (selectedOption.id === "easy") {
-        time1 = 1500;
-        time2 = 1000;
-    } else if (selectedOption.id === "medium") {
-        time1 = 1225;
-        time2 = 750;
-    } else if (selectedOption.id === "hard") {
-        time1 = 1050;
-        time2 = 500;
-    }
-})
-
-export function spawnTaupe() {
+export function spawnTaupe(time) {
     if (taupe) {
-        taupe.style.backgroundImage = "none";
+        taupe.style.backgroundImage = "url('../assets/buis-one.png')";
+        taupe.style.backgroundSize = "contain";
+        taupe.style.backgroundPosition = "center";
+        taupe.style.backgroundRepeat = "no-repeat";
         taupe = null;
     }
     
@@ -55,22 +39,23 @@ export function spawnTaupe() {
             taupe.style.backgroundImage = "none";
             taupe = null;
         }
-    }, time2);
+    }, t);
 }
-
-
 
 trous.forEach((trou) => {
     trou.addEventListener("click", () => {
         if (trou === taupe) {
             clearTimeout(timeoutID);
-            taupe.style.backgroundImage = "none";
+            taupe.style.backgroundImage = "url('../assets/buis-one.png')";
+            taupe.style.backgroundSize = "contain";
+            taupe.style.backgroundPosition = "center";
+            taupe.style.backgroundRepeat = "no-repeat";
             score++;
         }
     });
 });
 
-export function start() {
+export function start(t1, t2) {
     // Afficher le décompte avant de commencer le jeu
     let countdown = 3;
     h2.textContent = countdown;  // Affiche "3" dans le h2
@@ -88,11 +73,11 @@ export function start() {
         // Lorsque le décompte atteint 0, on commence le jeu
         if (countdown <= 0) {
             clearInterval(countdownInterval); // Arrête le décompte
-            startGame(); // Démarre le jeu
+            startGame(t1, t2); // Démarre le jeu
         }
     }, 1000); // Chaque seconde, on réduit le décompte de 1
      
-    function startGame() {
+    function startGame(t1, t2) {
         let timer = setInterval(() => {
             if (timeLeft > 0) {
                 timeLeft--;
@@ -101,7 +86,7 @@ export function start() {
                 clearInterval(timer);
                 clearInterval(spawnInterval);
                 gameRunning = false;
-                h2.textContent = `Temps écoulé ! Score final : ${score}`;
+                h2.innerHTML = `Temps écoulé !<br>Score final : ${score}`;
                 score = 0;
                 timeLeft = 60;
                 gameRunning = true;
@@ -110,8 +95,8 @@ export function start() {
         }, 1000);
 
         let spawnInterval = setInterval(() => {
-            if (gameRunning) spawnTaupe();
-        }, time1);
+            if (gameRunning) spawnTaupe(t1);
+        }, t2);
     }
 }
 

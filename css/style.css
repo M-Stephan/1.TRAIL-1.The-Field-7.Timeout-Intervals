@@ -1,6 +1,7 @@
 body {
     width: 100vw;
     height: 100vh;
+    margin-top: 25px;
     position: absolute;
     display: grid;
     grid-template-columns: 1fr;
@@ -61,11 +62,11 @@ h1 {
     margin: auto;
     background-color: #353535;
     color: #ddca5b;
-    height: 35px;
     border-radius: 10px;
     padding-right: 35px;
     padding-left: 35px;
     padding-top: 7px;
+    padding-bottom: 7px;
 }
 
 #time {
@@ -100,7 +101,6 @@ select {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    background-image: url("../assets/buis.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -115,8 +115,11 @@ select {
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
+    background-image: url("../assets/buis-one.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;   
 }
-
 
 #footer {
     grid-column: 1 / 2;
@@ -139,7 +142,6 @@ a {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        background-image: url("../assets/buis.png");
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -165,7 +167,6 @@ a {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        background-image: url("../assets/buis.png");
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
