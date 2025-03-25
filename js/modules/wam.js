@@ -28,7 +28,7 @@ export function spawnTaupe(time) {
     
     const randomTaupe = trous[Math.floor(Math.random() * trous.length)];
     taupe = randomTaupe;
-    taupe.style.backgroundImage = "url('../assets/taupe.png')";
+    taupe.style.backgroundImage = `url("../assets/taupe.png")`;
     taupe.style.backgroundSize = "contain";
     taupe.style.backgroundPosition = "center";
     taupe.style.backgroundRepeat = "no-repeat";
@@ -39,7 +39,7 @@ export function spawnTaupe(time) {
             taupe.style.backgroundImage = "none";
             taupe = null;
         }
-    }, t);
+    }, time);
 }
 
 trous.forEach((trou) => {
