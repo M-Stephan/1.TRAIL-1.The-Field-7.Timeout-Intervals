@@ -19,7 +19,7 @@ let gameRunning = true; // Variable pour arrêter le jeu
 
 export function spawnTaupe(time) {
     if (taupe) {
-        taupe.style.backgroundImage = "url('../assets/buis-one.png')";
+        taupe.style.backgroundImage = "url('../../assets/buis-one.png')";
         taupe.style.backgroundSize = "contain";
         taupe.style.backgroundPosition = "center";
         taupe.style.backgroundRepeat = "no-repeat";
@@ -28,7 +28,7 @@ export function spawnTaupe(time) {
     
     const randomTaupe = trous[Math.floor(Math.random() * trous.length)];
     taupe = randomTaupe;
-    taupe.style.backgroundImage = "url('../assets/taupe.png')";
+    taupe.style.backgroundImage = "url('../../assets/taupe.png')";
     taupe.style.backgroundSize = "contain";
     taupe.style.backgroundPosition = "center";
     taupe.style.backgroundRepeat = "no-repeat";
@@ -46,7 +46,7 @@ trous.forEach((trou) => {
     trou.addEventListener("click", () => {
         if (trou === taupe) {
             clearTimeout(timeoutID);
-            taupe.style.backgroundImage = "url('../assets/buis-one.png')";
+            taupe.style.backgroundImage = "url('../../assets/buis-one.png')";
             taupe.style.backgroundSize = "contain";
             taupe.style.backgroundPosition = "center";
             taupe.style.backgroundRepeat = "no-repeat";
