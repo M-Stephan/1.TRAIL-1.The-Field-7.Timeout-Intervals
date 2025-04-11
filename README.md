@@ -13,7 +13,7 @@
 - **JavaScript**: Game logic, interactivity, and functionality.
 
 ## Try
-- **Whack-a-Mole**: [➡️ Click here to play](https://ndc-studio.github.io/Timeout-Whack-A-Mole/)
+- **Whack-a-Mole**: [➡️ Click here to play](https://ndc-studio.github.io/1.TRAIL-1.The-Field-7.Timeout-Intervals/)
 
 ## Structure
 ```
