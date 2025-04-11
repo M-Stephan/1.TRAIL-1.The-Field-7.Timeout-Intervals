@@ -17,7 +17,7 @@
 
 ## Structure
 ```
-racine/ (https://ndc-studio.github.io/Timeout-Whack-A-Mole/)
+racine/ (https://ndc-studio.github.io/1.TRAIL-1.The-Field-7.Timeout-Intervals/)
 ├─ index.html
 ├─ README.md
 ├─ assets
