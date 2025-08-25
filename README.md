@@ -13,13 +13,13 @@
 - **JavaScript**: Game logic, interactivity, and functionality.
 
 ## Try
-- **Whack-a-Mole**: [➡️ Click here to play](https://ndc-studio.github.io/1.TRAIL-1.The-Field-7.Timeout-Intervals/)
+- **Whack-a-Mole**: [➡️ Click here to play](https://M-Stephan.github.io/1.TRAIL-1.The-Field-7.Timeout-Intervals/)
 
 ## Structure
 ```
-racine/ (https://ndc-studio.github.io/1.TRAIL-1.The-Field-7.Timeout-Intervals/)
-├─ index.html
+racine/ (https://M-Stephan.github.io/1.TRAIL-1.The-Field-7.Timeout-Intervals/)
 ├─ README.md
+├─ index.html
 ├─ assets
 |   ├─ buis-one.png
 |   ├─ dirt.png
@@ -34,17 +34,8 @@ racine/ (https://ndc-studio.github.io/1.TRAIL-1.The-Field-7.Timeout-Intervals/)
             ├─ function.js
             └─ wam.js
 ```
-## Contribute
-- Fork this repository.
-- Create a branch for your feature (`git checkout -b my-new-feature`).
-- Commit your changes (`git commit -am 'Add new feature'`).
-- Push the branch (`git push origin my-new-feature`).
-- **Please don't create a pull request**: We prefer to merge & push changes directly to maintain project consistency.
 
 ## Contact
 **Stéphan Martin.**  
 **NDC Studio. Founder**  
-- WebShop Tebex: [➡️ Click here](https://game-ndc-studio.tebex.io/)
-- GitHub: [➡️ Click here](https://github.com/ndc-studio)
-- Discord: [➡️ Click here](https://discord.gg/97eWRFYFTr)
 - Email: ➡️ ndc.dev.code@gmail.com
