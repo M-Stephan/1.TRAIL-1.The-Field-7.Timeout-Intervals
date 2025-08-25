@@ -3,7 +3,7 @@ const header = document.getElementById("header");
 
 /** @const {HTMLElement} h2 -- Crée un <h2> */
 const h2 = document.createElement("h2");
-h2.id = "score"
+h2.id = "score";
 
 /** @description -- Ajoute le <h1> dans le <header> */
 header.appendChild(h2);
