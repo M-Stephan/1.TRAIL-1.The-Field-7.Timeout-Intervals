@@ -16,9 +16,6 @@
 ![Live Demo](https://img.shields.io/badge/Live-Demo-green?style=for-the-badge)
 - [→ Click here ←](https://m-stephan.github.io/1.TRAIL-1.The-Field-7.Timeout-Intervals/)
 
-## ✍️ Author
-- NDC Studio (Founder: Stéphan Martin)
-
 ## 🎯 Description
 - All exercises of the 7.Timeout-Intervals track.
 - Project **Whack-a-Mole**: A fun, interactive game where you need to hit moles that appear randomly.
